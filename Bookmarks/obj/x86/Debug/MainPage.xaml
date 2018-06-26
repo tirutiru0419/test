@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="Bookmarks.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Bookmarks"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <NavigationView x:ConnectionId='1' x:Name="NavView"                                             Header="ようこそ">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="home" Content="ホーム" Tag="home"/>
+                <NavigationViewItem x:ConnectionId='2' x:Name="signup" Icon="contact" Content="サインアップ" Tag="signup" Visibility="Visible"/>
+                <NavigationViewItem x:ConnectionId='3' x:Name="signin" Icon="contact2" Content="サインイン" Tag="signin" Visibility="Visible"/>
+                <NavigationViewItem x:ConnectionId='4' x:Name="signout" Icon="contact2" Content="サインアウト" Tag="signout" Visibility="Collapsed"/>
+                <NavigationViewItemHeader/>
+                <NavigationViewItem Icon="AllApps" Content="仕事" Tag="work"/>
+                <NavigationViewItem Icon="AllApps" Content="音楽" Tag="music"/>
+                <NavigationViewItem Icon="AllApps" Content="芸能" Tag="enter"/>
+                <NavigationViewItem Icon="AllApps" Content="スポーツ" Tag="sport"/>
+                <NavigationViewItem Icon="AllApps" Content="ファッション" Tag="fashion"/>
+                <NavigationViewItem Icon="AllApps" Content="ゲーム" Tag="game"/>
+                <NavigationViewItem Icon="street" Content="その他" Tag="other"/>
+
+            </NavigationView.MenuItems>
+
+            <Frame x:ConnectionId='5' x:Name="ContentFrame">
+                <Frame.ContentTransitions>
+                    <TransitionCollection>
+                        <NavigationThemeTransition/>
+                    </TransitionCollection>
+                </Frame.ContentTransitions>
+            </Frame>
+        </NavigationView>
+
+
+    </Grid>
+</Page>
+
