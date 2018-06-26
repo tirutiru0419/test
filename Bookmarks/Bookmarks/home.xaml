@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="Bookmarks.home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Bookmarks"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" FontFamily="Segoe UI">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Left" Margin="194,415,0,0" Text="まずは、ログインしましょう" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="40" RenderTransformOrigin="-0.166,0.3" FontFamily="Segoe UI" FontWeight="Bold" FontStyle="Normal" IsColorFontEnabled="True"/>
+        <Image Source="/Assets/user.jpg" HorizontalAlignment="Left" Height="200" Margin="292,200,0,0" VerticalAlignment="Top" Width="200"/>
+        <TextBlock HorizontalAlignment="Left" Margin="265,480
+                   ,0,0" Text="アカウントをお持ちでない方は" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="TextBlock" HorizontalAlignment="Left" Margin="495,480,0,0" Text="こちら" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+
+    </Grid>
+</Page>
